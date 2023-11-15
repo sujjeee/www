@@ -1,20 +1,22 @@
 import Link from "next/link"
-
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
-import ThemeToggle from "./theme-toggle"
 
 export function Header() {
   return (
-    <header className="w-full bg-background pt-4">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="font-bold">
-          {siteConfig.name}
-          <span className="sr-only">Home</span>
-        </Link>
-        <nav className="flex items-center space-x-1">
+    <header className="container max-w-[640px]">
+      <div className="flex items-center justify-between py-4">
+        <a className="flex items-center space-x-2" href="/">
+          <div className="flex flex-col space-y-1 text-sm leading-none">
+            <span className="text-lg font-bold tracking-wide">
+              sujjeee
+            </span>
+            <span>software developer</span>
+          </div>
+        </a>
+        <div className="flex items-center space-x-2">
           <Link
             href={siteConfig.links.github}
             target="_blank"
@@ -27,7 +29,7 @@ export function Header() {
               })
             )}
           >
-            <Icons.gitHub className="h-4 w-4" />
+            <Icons.gitHub className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
           <Link
@@ -42,11 +44,10 @@ export function Header() {
               })
             )}
           >
-            <Icons.twitter className="h-3 w-3 fill-current" />
-            <span className="sr-only">Twitter</span>
+            <Icons.twitter className="h-4 w-4" />
+            <span className="sr-only">Twitter/x</span>
           </Link>
-          <ThemeToggle />
-        </nav>
+        </div>
       </div>
     </header>
   )
