@@ -22,7 +22,7 @@ export const projects = [
     {
         title: 'securelink',
         description: 'open source link shortener for secure, customized link sharing.',
-        href: 'https://securelink.vercel.app'
+        href: 'https://securelink.vercel.app',
+        archived: true
     },
-
 ]
