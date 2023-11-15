@@ -17,8 +17,8 @@ export default function Home() {
           </h2>
         </div>
         <ul className="space-y-4 py-4 text-[14.4px]">
-          {projects.map(project => (
-            <Project {...project} />
+          {projects.map((project, index) => (
+            <Project {...project} key={index} />
           ))}
         </ul>
       </article>
