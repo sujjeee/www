@@ -15,14 +15,14 @@ export const projects = [
         href: 'https://peepstudio.vercel.app'
     },
     {
-        title: 'securelink',
-        description: 'open source link shortener for secure, customized link sharing.',
-        href: 'https://securelink.vercel.app',
-    },
-    {
         title: 'playboard',
         description: 'a quick and collaborative drawing app for instant idea expression.',
         href: 'https://playboard.vercel.app',
         archived: true
+    },
+    {
+        title: 'securelink',
+        description: 'open source link shortener for secure, customized link sharing.',
+        href: 'https://securelink.vercel.app',
     },
 ]
