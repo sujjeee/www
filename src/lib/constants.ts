@@ -19,12 +19,12 @@ export const projects = [
   {
     title: "svgls",
     description: "a cli for easily adding svg icons to your project.",
-    href: "https://securelink.vercel.app"
+    href: "https://github.com/sujjeee/svgls"
   },
   {
     title: "dubco",
     description: "a cli for easily shortening URLs.",
-    href: "https://securelink.vercel.app"
+    href: "https://github.com/sujjeee/dubco"
   },
   {
     title: "playboard",
