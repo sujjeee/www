@@ -17,6 +17,16 @@ export const projects = [
     href: "https://peepstudio.vercel.app"
   },
   {
+    title: "svgls",
+    description: "a cli for easily adding svg icons to your project.",
+    href: "https://securelink.vercel.app"
+  },
+  {
+    title: "dubco",
+    description: "a cli for easily shortening URLs.",
+    href: "https://securelink.vercel.app"
+  },
+  {
     title: "playboard",
     description:
       "a quick and collaborative drawing app for instant idea expression.",
