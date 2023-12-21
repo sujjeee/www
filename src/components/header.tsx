@@ -1,8 +1,8 @@
-import Link from "next/link"
-import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
+import Link from "next/link";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Icons } from "@/components/icons";
 
 export function Header() {
   return (
@@ -10,9 +10,7 @@ export function Header() {
       <div className="flex items-center justify-between py-4">
         <a className="flex items-center space-x-2" href="/">
           <div className="flex flex-col space-y-1 text-sm leading-none">
-            <span className="text-lg font-bold tracking-wide">
-              sujjeee
-            </span>
+            <span className="text-lg font-bold tracking-wide">sujjeee</span>
             <span>software developer</span>
           </div>
         </a>
@@ -25,7 +23,7 @@ export function Header() {
               buttonVariants({
                 variant: "ghost",
                 size: "icon",
-                className: "h-7 w-7",
+                className: "h-7 w-7"
               })
             )}
           >
@@ -40,7 +38,7 @@ export function Header() {
               buttonVariants({
                 variant: "ghost",
                 size: "icon",
-                className: "h-7 w-7",
+                className: "h-7 w-7"
               })
             )}
           >
@@ -50,5 +48,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
