@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: "dubco",
-    description: "a cli for easily shortening URLs.",
+    description: "a cli for easily shortening urls.",
     href: "https://github.com/sujjeee/dubco"
   },
   {

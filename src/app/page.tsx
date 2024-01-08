@@ -16,6 +16,29 @@ export default function Home() {
               jetBrains_Mono.className
             )}
           >
+            about me
+          </h2>
+        </div>
+        <p className="text-muted-foreground space-y-4 py-4 ">
+          hey, i'm <span className="text-foreground font-mono">suraj</span> aka{" "}
+          <span className="text-foreground font-mono">sujjeee</span>. i'm a self
+          taught{" "}
+          <span className="text-foreground font-mono">
+            full-stack developer
+          </span>{" "}
+          and <br /> i love building cool, crazy and awesome{" "}
+          <span className="text-foreground font-mono">open source</span>{" "}
+          projects.
+        </p>
+      </article>
+      <article className="pt-6">
+        <div className="space-y-1">
+          <h2
+            className={cn(
+              "font-mono text-lg tracking-tighter",
+              jetBrains_Mono.className
+            )}
+          >
             projects
           </h2>
         </div>
