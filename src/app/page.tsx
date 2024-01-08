@@ -19,14 +19,14 @@ export default function Home() {
             about me
           </h2>
         </div>
-        <p className="text-muted-foreground space-y-4 py-4 ">
+        <p className="text-muted-foreground space-y-4 py-4 text-[14.4px]">
           hey, i'm <span className="text-foreground font-mono">suraj</span> aka{" "}
           <span className="text-foreground font-mono">sujjeee</span>. i'm a self
           taught{" "}
           <span className="text-foreground font-mono">
             full-stack developer
           </span>{" "}
-          and <br /> i love building cool, crazy and awesome{" "}
+          and i love building cool, crazy and awesome{" "}
           <span className="text-foreground font-mono">open source</span>{" "}
           projects.
         </p>
