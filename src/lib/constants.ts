@@ -11,6 +11,12 @@ export const projects = [
     href: "https://linknode.vercel.app"
   },
   {
+    title: "GemAI",
+    description:
+      "a cli chatbot powered by googles gemini and rag model",
+    href: "https://github.com/sujjeee/gemai"
+  },
+  {
     title: "peepstudio",
     description:
       "open source tool that lets you generate random peeps avatars in seconds.",
