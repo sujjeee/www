@@ -1,9 +1,9 @@
+import { Header } from "@/components/header";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/providers/theme-provider";
-import { Header } from "@/components/header";
-import { siteConfig } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"] });
 

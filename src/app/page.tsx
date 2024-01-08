@@ -1,7 +1,7 @@
-import { JetBrains_Mono } from "next/font/google";
-import { cn } from "@/lib/utils";
 import Project from "@/components/project";
 import { projects } from "@/lib/constants";
+import { cn } from "@/lib/utils";
+import { JetBrains_Mono } from "next/font/google";
 
 const jetBrains_Mono = JetBrains_Mono({ subsets: ["latin"] });
 
