@@ -18,12 +18,34 @@
         "useAwait": "warn"
       },
       "a11y": {
-        "noSvgWithoutTitle": "off"
+        "noSvgWithoutTitle": "off",
+        "useAltText": "warn",
+        "useButtonType": "warn",
+        "useKeyWithClickEvents": "warn"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "warn"
+      },
+      "performance": {
+        "noDelete": "warn"
+      },
+      "style": {
+        "all": false
+      },
+      "suspicious": {
+        "noArrayIndexKey": "warn",
+        "noAssignInExpressions": "warn",
+        "noEmptyInterface": "off",
+        "noExplicitAny": "warn"
       }
     }
   },
-  "formatter": {
+  "vcs": {
+    "clientKind": "git",
     "enabled": true,
+    "useIgnoreFile": true
+  },
+  "formatter": {
     "indentWidth": 2,
     "indentStyle": "space"
   },
