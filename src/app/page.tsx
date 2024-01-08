@@ -1,3 +1,4 @@
+import Links from "@/components/links";
 import Project from "@/components/project";
 import { projects } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -30,6 +31,9 @@ export default function Home() {
           <span className="text-foreground font-mono">open source</span>{" "}
           projects.
         </p>
+        <div className="flex -ml-1 sm:ml-0 sm:hidden">
+          <Links />
+        </div>
       </article>
       <article className="pt-6">
         <div className="space-y-1">

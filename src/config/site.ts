@@ -8,6 +8,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/sujjeeee",
     github: "https://github.com/sujjeee",
-    discord: "https://discord.com/users/sujjeee"
+    email: "mailto:sujjeee@outlook.com",
+    discord: "https://discordapp.com/users/1056124751527030794"
   }
 };
