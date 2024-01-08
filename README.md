@@ -15,8 +15,23 @@ Open source tool that helps you generate one link for all your links.
 
 ---
 
+### [gemai](https://github.com/sujjeee/gemai)  
+a cli chatbot powered by googles gemini and rag model.
+
+---
+
 ### [peepstudio](https://peepstudio.vercel.app)  
 Open source tool that lets you generate random peeps avatars in seconds.
+
+---
+
+### [svgls](https://github.com/sujjeee/svgls)  
+a cli for easily adding svg icons to your project.
+
+---
+
+### [dubco](https://peepstudio.vercel.app)  
+a cli for easily shortening URLs.
 
 ---
 
