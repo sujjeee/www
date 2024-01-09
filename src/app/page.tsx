@@ -21,9 +21,9 @@ export default function Home() {
           </h2>
         </div>
         <p className="text-muted-foreground space-y-4 py-4 text-[14.4px]">
-          hey, i'm <span className="text-foreground font-mono">suraj</span> aka{" "}
-          <span className="text-foreground font-mono">sujjeee</span>. i'm a self
-          taught{" "}
+          hi there, i'm <span className="text-foreground font-mono">suraj</span>{" "}
+          aka <span className="text-foreground font-mono">sujjeee</span>. i'm a
+          self taught{" "}
           <span className="text-foreground font-mono">
             full-stack developer
           </span>{" "}
