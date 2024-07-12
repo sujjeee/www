@@ -5,7 +5,7 @@ export interface ProjectProps {
   href: string
   title: string
   description: string
-  status: "wip" | "maintained" | "sustained" | "archived"
+  status: "wip" | "maintained" | "archived"
 }
 
 export function Project({ href, title, description, status }: ProjectProps) {

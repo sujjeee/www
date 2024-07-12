@@ -6,13 +6,13 @@ export const projects = [
     title: "threads-clone",
     description: "threads clone with t3 stack.",
     href: "https://threadss-clone.vercel.app",
-    status: "sustained",
+    status: "maintained",
   },
   {
     title: "linknode",
     description: "minimalistic link in bio.",
     href: "https://linknode.vercel.app",
-    status: "sustained",
+    status: "maintained",
   },
   {
     title: "svgls",
