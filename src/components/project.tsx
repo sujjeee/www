@@ -8,12 +8,7 @@ export interface ProjectProps {
   status: "wip" | "maintained" | "sustained" | "archived"
 }
 
-const Project: React.FC<ProjectProps> = ({
-  href,
-  title,
-  description,
-  status,
-}) => {
+export function Project({ href, title, description, status }: ProjectProps) {
   return (
     <a
       href={href}
@@ -36,5 +31,3 @@ const Project: React.FC<ProjectProps> = ({
     </a>
   )
 }
-
-export default Project

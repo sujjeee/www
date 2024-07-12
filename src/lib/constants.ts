@@ -1,3 +1,4 @@
+import { SocialLinksProps } from "@/components/socials"
 import { ProjectProps } from "@/components/project"
 
 export const projects = [
@@ -50,3 +51,22 @@ export const projects = [
     status: "archived",
   },
 ] as ProjectProps[]
+
+export const socialLinks = [
+  {
+    title: "Email",
+    href: "mailto:contact@sujjeee.com",
+  },
+  {
+    title: "Discord",
+    href: "https://discordapp.com/users/1056124751527030794",
+  },
+  {
+    title: "Github",
+    href: "https://github.com/sujjeee",
+  },
+  {
+    title: "X",
+    href: "https://x.com/sujjeeee",
+  },
+] as SocialLinksProps[]
