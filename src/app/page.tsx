@@ -3,6 +3,12 @@ import { cn } from "@/lib/utils"
 import { projects, socialLinks } from "@/lib/constants"
 import { Project } from "@/components/project"
 import { SocialLinks } from "@/components/socials"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 const newsreader = Newsreader({
   style: "italic",
@@ -13,7 +19,7 @@ export default function Home() {
   return (
     <section className="items-center gap-8 container py-3 md:py-4 space-y-12">
       {/* Name */}
-      <header className="top-0 z-50 w-full animate-slide-from-down-and-fade-1">
+      <header className="top-0 z-50 w-full animate-slide-from-down-and-fade-1 cursor-context-menu">
         <div className="flex flex-col">
           <h1 className="inline-flex text-[15px] font-medium no-underline">
             Suraj Gupta
@@ -43,9 +49,23 @@ export default function Home() {
             Software Developer
           </span>{" "}
           believes in building minimal but significant things for the web.{" "}
-          Inspired by <span className="italic">Kaizen,</span> strive for
-          continuous learning and improvement, always seeking innovative ways to
-          refine my skills and knowledge.
+          Inspired by{" "}
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <span className="italic hover:underline underline-offset-4">
+                  Kaizen,{" "}
+                </span>
+              </TooltipTrigger>
+              <TooltipContent>
+                <span className="italic prose prose-zinc dark:prose-invert text-sm">
+                  (n.) philosophy of continuos improvement
+                </span>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>{" "}
+          strive for continuous learning and improvement, always seeking
+          innovative ways to refine my skills and knowledge.
         </p>
       </section>
 
