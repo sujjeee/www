@@ -1,14 +1,14 @@
-export type SiteConfig = typeof siteConfig;
+export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "sujjeee",
-  description: "Personal website of suraj.",
+  name: "Suraj Gupta",
+  description: "Software Developer.",
   url: "https://sujjeee.com",
   ogImage: "https://sujjeee.com/opengraph-image.png",
   links: {
-    twitter: "https://twitter.com/sujjeeee",
+    twitter: "https://x.com/sujjeeee",
     github: "https://github.com/sujjeee",
     email: "mailto:sujjeee@outlook.com",
-    discord: "https://discordapp.com/users/1056124751527030794"
-  }
-};
+    discord: "https://discordapp.com/users/1056124751527030794",
+  },
+}

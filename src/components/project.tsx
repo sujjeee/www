@@ -1,40 +1,40 @@
-import type React from "react";
+import type React from "react"
+import { Icons } from "./icons"
 
-interface ProjectProps {
-  href: string;
-  title: string;
-  description: string;
-  archived?: boolean;
+export interface ProjectProps {
+  href: string
+  title: string
+  description: string
+  status: "wip" | "maintained" | "sustained" | "archived"
 }
 
 const Project: React.FC<ProjectProps> = ({
   href,
   title,
   description,
-  archived
+  status,
 }) => {
   return (
-    <li>
-      <a
-        target="_blank"
-        className="flex flex-col space-y-1.5 !no-underline"
-        href={href}
-        rel="noreferrer"
-      >
-        <div>
-          <span className="font-medium underline underline-offset-4 ">
-            {title}
-          </span>
-          {archived && (
-            <span className="ml-2 rounded-lg px-2 py-0.5 font-mono text-xs no-underline bg-muted text-muted-background">
-              Archived
-            </span>
-          )}
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative flex cursor-pointer flex-row items-center justify-between rounded-md duration-300 hover:before:absolute hover:before:-inset-2.5 hover:before:rounded-md hover:before:bg-accent/20 hover:before:content-['']"
+    >
+      <div className="flex flex-col space-y-1 z-10">
+        <div className="flex items-center space-x-2">
+          <span className="text-[15px] font-medium leading-4">{title}</span>
+          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs font-normal text-muted-foreground">
+            {status}
+          </div>
         </div>
-        <span className="text-muted-foreground">{description}</span>
-      </a>
-    </li>
-  );
-};
+        <span className="text-[15px] prose prose-zinc dark:prose-invert">
+          {description}
+        </span>
+      </div>
+      <Icons.link className="size-3.5 whitespace-nowrap text-muted-foreground" />
+    </a>
+  )
+}
 
-export default Project;
+export default Project

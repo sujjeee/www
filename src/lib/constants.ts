@@ -1,48 +1,52 @@
+import { ProjectProps } from "@/components/project"
+
 export const projects = [
   {
     title: "threads-clone",
-    description: "open source threads clone with t3 stack.",
-    href: "https://threadss-clone.vercel.app"
+    description: "threads clone with t3 stack.",
+    href: "https://threadss-clone.vercel.app",
+    status: "sustained",
   },
   {
     title: "linknode",
-    description:
-      "open source tool that helps you generate one link for all your links.",
-    href: "https://linknode.vercel.app"
-  },
-  {
-    title: "gemai",
-    description: "a cli chatbot powered by googles gemini and rag model.",
-    href: "https://github.com/sujjeee/gemai"
-  },
-  {
-    title: "peepstudio",
-    description:
-      "open source tool that lets you generate random peeps avatars in seconds.",
-    href: "https://peepstudio.vercel.app"
+    description: "minimalistic link in bio.",
+    href: "https://linknode.vercel.app",
+    status: "sustained",
   },
   {
     title: "svgls",
-    description: "a cli for easily adding svg icons to your project.",
-    href: "https://github.com/sujjeee/svgls"
+    description: "a cli for adding svg icons.",
+    href: "https://github.com/sujjeee/svgls",
+    status: "archived",
+  },
+  {
+    title: "gemai",
+    description: "a cli rag chatbot with gemini.",
+    href: "https://github.com/sujjeee/gemai",
+    status: "archived",
+  },
+  {
+    title: "peepstudio",
+    description: "random peeps avatar generator.",
+    href: "https://peepstudio.vercel.app",
+    status: "archived",
   },
   {
     title: "dubco",
-    description: "a cli for easily shortening urls.",
-    href: "https://github.com/sujjeee/dubco"
+    description: "a cli for shortening urls.",
+    href: "https://github.com/sujjeee/dubco",
+    status: "archived",
   },
   {
     title: "playboard",
-    description:
-      "a quick and collaborative drawing app for instant idea expression.",
+    description: "collaborative drawing app.",
     href: "https://playboard.vercel.app",
-    archived: true
+    status: "archived",
   },
   {
     title: "securelink",
-    description:
-      "open source link shortener for secure, customized link sharing.",
+    description: "secure link shortener.",
     href: "https://securelink.vercel.app",
-    archived: true
-  }
-];
+    status: "archived",
+  },
+] as ProjectProps[]
