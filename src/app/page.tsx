@@ -59,7 +59,7 @@ export default function Home() {
               </TooltipTrigger>
               <TooltipContent>
                 <span className="italic prose prose-zinc dark:prose-invert text-sm">
-                  (n.) philosophy of continuos improvement
+                  (n.) philosophy of continuous improvement
                 </span>
               </TooltipContent>
             </Tooltip>
