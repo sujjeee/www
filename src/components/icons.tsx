@@ -102,5 +102,5 @@ export const Icons = {
         fill="currentColor"
       ></path>
     </svg>
-  ),
+  )
 }

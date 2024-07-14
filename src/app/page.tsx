@@ -1,18 +1,18 @@
-import { Newsreader } from "next/font/google"
-import { cn } from "@/lib/utils"
-import { projects, socialLinks } from "@/lib/constants"
 import { Project } from "@/components/project"
 import { SocialLinks } from "@/components/socials"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
+  TooltipTrigger
 } from "@/components/ui/tooltip"
+import { projects, socialLinks } from "@/lib/constants"
+import { cn } from "@/lib/utils"
+import { Newsreader } from "next/font/google"
 
 const newsreader = Newsreader({
   style: "italic",
-  subsets: ["latin"],
+  subsets: ["latin"]
 })
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
           <span
             className={cn(
               "font-medium font-reader text-[16px] text-foreground",
-              newsreader.className,
+              newsreader.className
             )}
           >
             Software Developer

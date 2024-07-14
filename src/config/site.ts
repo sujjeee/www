@@ -9,6 +9,6 @@ export const siteConfig = {
     twitter: "https://x.com/sujjeeee",
     github: "https://github.com/sujjeee",
     email: "mailto:sujjeee@outlook.com",
-    discord: "https://discordapp.com/users/1056124751527030794",
-  },
+    discord: "https://discordapp.com/users/1056124751527030794"
+  }
 }

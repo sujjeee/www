@@ -7,11 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome lint .",
-    "lint:fix": "biome lint --apply-unsafe .",
+    "lint:write": "biome lint --write --unsafe .",
     "format": "biome format .",
-    "format:fix": "biome format --write .",
+    "format:write": "biome format --write .",
     "code-check": "biome check .",
-    "code-check:fix": "biome check --apply-unsafe .",
+    "code-check:write": "biome check --write --unsafe .",
     "biome:ci": "biome ci ."
   },
   "dependencies": {
