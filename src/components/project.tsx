@@ -14,7 +14,7 @@ export function Project({ href, title, description, status }: ProjectProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative flex cursor-pointer flex-row items-center justify-between rounded-md duration-300 hover:before:absolute hover:before:-inset-2.5 hover:before:rounded-md hover:before:bg-accent/20 hover:before:content-['']"
+      className="group relative flex cursor-pointer flex-row items-center justify-between rounded-md duration-300 hover:before:absolute hover:before:-inset-2.5 hover:before:rounded-md hover:before:bg-accent/20 hover:before:content-['']"
     >
       <div className="flex flex-col space-y-1 z-10">
         <div className="flex items-center space-x-2">
@@ -27,7 +27,9 @@ export function Project({ href, title, description, status }: ProjectProps) {
           {description}
         </span>
       </div>
-      <Icons.link className="size-3.5 whitespace-nowrap text-muted-foreground" />
+      <div className="transition duration-150 group-hover:rotate-45">
+        <Icons.link className="size-3.5 whitespace-nowrap text-muted-foreground" />
+      </div>
     </a>
   )
 }
