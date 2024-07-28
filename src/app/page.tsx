@@ -48,7 +48,7 @@ export default function Home() {
           >
             Software Developer
           </span>{" "}
-          believes in building minimal but significant things for the web.{" "}
+          who believes in building creative and modern web apps.{" "}
           Inspired by{" "}
           <TooltipProvider>
             <Tooltip>
