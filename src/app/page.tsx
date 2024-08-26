@@ -48,8 +48,7 @@ export default function Home() {
           >
             Software Developer
           </span>{" "}
-          who believes in building creative and modern web apps.{" "}
-          Inspired by{" "}
+          who believes in building creative and modern web apps. Inspired by{" "}
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -72,6 +71,7 @@ export default function Home() {
       {/* Projects */}
       <section className="animate-slide-from-down-and-fade-3 space-y-4 text-sm">
         <h3 className="font-medium text-[15px]">Projects</h3>
+
         <div className="grid grid-cols-1 gap-6 ">
           {projects.map((project, index) => (
             <Project {...project} key={index} />

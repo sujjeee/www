@@ -15,6 +15,18 @@ export const projects = [
     status: "maintained"
   },
   {
+    title: "artoons",
+    description: "cartoon-style ai illustrations.",
+    href: "https://artoons.vercel.app",
+    status: "maintained"
+  },
+  {
+    title: "mindmap",
+    description: "map your thoughts.",
+    href: "https://map-your-thoughts.vercel.app/",
+    status: "maintained"
+  },
+  {
     title: "svgls",
     description: "a cli for adding svg icons.",
     href: "https://github.com/sujjeee/svgls",
@@ -27,15 +39,15 @@ export const projects = [
     status: "archived"
   },
   {
-    title: "peepstudio",
-    description: "random peeps avatar generator.",
-    href: "https://peepstudio.vercel.app",
-    status: "archived"
-  },
-  {
     title: "dubco",
     description: "a cli for shortening urls.",
     href: "https://github.com/sujjeee/dubco",
+    status: "archived"
+  },
+  {
+    title: "peepstudio",
+    description: "random avatar generator.",
+    href: "https://peepstudio.vercel.app",
     status: "archived"
   },
   {
