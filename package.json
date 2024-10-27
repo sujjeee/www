@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "concurrently \"content-collections watch\" \"build-scripts dev\" \"next dev\"",
+    "build": "content-collections build && build-scripts build && next build",
     "start": "next start",
     "lint": "biome lint .",
     "lint:write": "biome lint --write --unsafe .",
@@ -30,11 +30,14 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@content-collections/core": "^0.7.2",
+    "@content-collections/next": "^0.2.3",
     "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20.17.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.0.1",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3"
