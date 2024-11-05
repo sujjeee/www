@@ -17,9 +17,6 @@ const config = {
         "2xl": "1400px",
       },
     },
-    fontSize: {
-      sm: ["15px", { lineHeight: "20px" }],
-    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

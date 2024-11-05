@@ -37,7 +37,7 @@ export function About() {
                 Kaizen,{" "}
               </span>
             </TooltipTrigger>
-            <TooltipContent>
+            <TooltipContent align="start">
               <span className="italic prose prose-zinc dark:prose-invert text-sm">
                 (n.) philosophy of continuous improvement
               </span>
