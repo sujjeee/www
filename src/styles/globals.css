@@ -137,3 +137,16 @@ body::-webkit-scrollbar {
 .animate-slide-from-down-and-fade-6 {
   animation: slideFromDownAndFade 0.6s ease-in-out 0.6s both;
 }
+
+.prose a {
+  border-bottom-width: 1px;
+  border-style: dashed;
+  border-bottom-color: #ffffff;
+  text-decoration-line: none;
+  padding-bottom: 1.5px;
+}
+
+.prose a:hover {
+  border-style: solid;
+  text-decoration: none;
+}
