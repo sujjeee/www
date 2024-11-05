@@ -24,10 +24,22 @@
     --destructive-foreground: 15 99% 91%;
     --ring: 252 11% 35%;
     --radius: 0.5rem;
+    --scrollbar-thumb: 217.9 10.6% 64.9%;
+    --scrollbar-track: transparent;
+    --selection-background: #ccfbf1;
+    --selection-foreground: #3f988f;
+    --kbd-background: 216 12.2% 83.9%;
+    --kbd-foreground: 220.9 39.3% 11%;
+    --kbd-border: 217.9 10.6% 64.9%;
+    --highlight-background: #d9f99d;
+    --highlight-foreground: #fde047;
+    --radius-small: 4px;
+    --radius-base: 8px;
+    --radius-large: 12px;
   }
 
   .dark {
-    --background: 0 0% 6.27%;
+    --background: 270, 5%, 7%;
     --foreground: 252 37% 98%;
     --muted: 0 0% 10.98%;
     --muted-foreground: 0 0% 62.75%;
@@ -44,9 +56,12 @@
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 21.31% 11.96%;
+    --highlight-background: #713f12;
+    --highlight-foreground: #fde047;
+    --selection-background: #042f2e;
+    --selection-foreground: #6ee7b7;
     --destructive-foreground: 0 100% 75.1%;
     --ring: 27.06 100% 80%;
-    --radius: 0.5rem;
   }
 }
 
@@ -57,6 +72,16 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::-moz-selection {
+  color: var(--selection-foreground);
+  background-color: var(--selection-background);
+}
+
+::selection {
+  color: var(--selection-foreground);
+  background-color: var(--selection-background);
 }
 
 @media (max-width: 640px) {
