@@ -1,6 +1,7 @@
 import type React from "react"
 import { Icons } from "./icons"
 import { projects } from "@/lib/constants"
+import { ShellSection } from "./ui/shell"
 
 export interface ProjectProps {
   href: string
@@ -11,9 +12,7 @@ export interface ProjectProps {
 
 export function Project() {
   return (
-    <section className="animate-slide-from-down-and-fade-5 space-y-4 text-sm ">
-      <h3 className="font-medium text-sm text-primary">Projects</h3>
-
+    <ShellSection index={4} title="Projects">
       <div className="grid grid-cols-1 gap-6 ">
         {projects.map((project, index) => (
           <a
@@ -42,6 +41,6 @@ export function Project() {
           </a>
         ))}
       </div>
-    </section>
+    </ShellSection>
   )
 }

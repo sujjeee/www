@@ -1,5 +1,4 @@
 import { ProjectProps } from "@/components/project"
-import { SocialLinksProps } from "@/components/socials"
 import { WorkProps } from "@/components/work"
 
 export const projects = [
@@ -65,38 +64,22 @@ export const projects = [
   },
 ] as ProjectProps[]
 
-export const socialLinks = [
-  {
-    title: "Email",
-    href: "mailto:contact@sujjeee.com",
-  },
-  {
-    title: "Discord",
-    href: "https://discordapp.com/users/1056124751527030794",
-  },
-  {
-    title: "Github",
-    href: "https://github.com/sujjeee",
-  },
-  {
-    title: "X",
-    href: "https://x.com/sujjeeee",
-  },
-] as SocialLinksProps[]
-
 export const workExperience = [
   {
     title: "Tapify",
     href: "#",
+    buttonText: "Building SaaS from Scratch",
   },
   {
     title: "PDFScribe",
     href: "#",
     status: "contract work",
+    buttonText: "Solving Sellers Problem",
   },
   {
     title: "OnShow",
     href: "#",
     status: "freelancing",
+    buttonText: "Learn New Things by Doing",
   },
 ] as WorkProps[]

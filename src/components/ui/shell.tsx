@@ -15,7 +15,7 @@ export function ShellSection({
       )}
       {...props}
     >
-      <h3 className="font-medium text-sm">{title}</h3>
+      <h3 className="font-medium text-[15px]">{title}</h3>
       {children}
     </section>
   )

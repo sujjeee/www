@@ -1,9 +1,9 @@
 import Link from "next/link"
+import { ShellSection } from "./ui/shell"
 
 export function Contact() {
   return (
-    <section className="animate-slide-from-down-and-fade-6 space-y-4  ]">
-      <h3 className="font-medium text-sm text-primary ">Connect</h3>
+    <ShellSection index={5} title="Connect">
       <div className="prose prose-zinc dark:prose-invert text-[15px]">
         <p>
           If you're looking to connect for a project, feel free to reach out via{" "}
@@ -45,6 +45,6 @@ export function Contact() {
           if you find my work interesting.
         </p>
       </div>
-    </section>
+    </ShellSection>
   )
 }
