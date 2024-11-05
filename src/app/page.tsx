@@ -3,7 +3,6 @@ import { Contact } from "@/components/contact"
 import { ProfileHeader } from "@/components/profile-header"
 import { Project } from "@/components/project"
 import { Work } from "@/components/work"
-import { Writings } from "@/components/writings"
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <ProfileHeader name="Suraj Gupta" username="sujjeee" isActive />
       <About />
       <Work />
-      <Writings />
       <Project />
       <Contact />
     </section>
