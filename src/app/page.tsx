@@ -1,6 +1,4 @@
-import { Icons } from "@/components/icons"
 import { Project } from "@/components/project"
-import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
@@ -8,7 +6,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { Work } from "@/components/work"
-import { projects, socialLinks } from "@/lib/constants"
+import { Writings } from "@/components/writings"
+import { projects, workExperience } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 import { Newsreader } from "next/font/google"
 import Link from "next/link"
@@ -105,106 +104,33 @@ export default function Home() {
         <h3 className="font-medium text-[15px]">Work Experience</h3>
 
         <div className="rounded-md border border-b w-full border-input ">
-          <div className="p-4 w-full justify-between items-center flex border-b border-input">
-            <span className="text-sm  leading-4">Tapify</span>
-            <Button
-              className=" text-xs text-muted-foreground"
-              variant={"outline"}
-              size={"xs"}
-            >
-              View Details
-            </Button>
-          </div>
-          <div className="p-4 w-full justify-between items-center flex border-b border-input">
-            <div className="flex items-center space-x-2">
-              <span className="text-sm leading-4">PDFScribe</span>
-
-              <div className="inline-flex items-center rounded-full border border-input px-2.5 py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs font-normal text-muted-foreground">
-                Contract Work
-              </div>
-            </div>
-            <Button
-              className=" text-xs text-muted-foreground"
-              variant={"outline"}
-              size={"xs"}
-            >
-              View Details
-            </Button>
-          </div>
-
-          <div className="p-4 w-full justify-between items-center flex">
-            <div className="flex items-center space-x-2">
-              <span className="text-sm  leading-4">OnShow</span>
-
-              <div className="inline-flex items-center rounded-full border border-input px-2.5 py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs font-normal text-muted-foreground">
-                Freelancing
-              </div>
-            </div>
-
-            <Button
-              className=" text-xs text-muted-foreground"
-              variant={"outline"}
-              size={"xs"}
-            >
-              View Details
-            </Button>
-          </div>
+          {workExperience.map((work) => (
+            <Work key={work.title} {...work} />
+          ))}
         </div>
       </section>
 
       {/* Writtings */}
-      <section className="animate-slide-from-down-and-fade-3 space-y-4 text-sm">
+      <section className="animate-slide-from-down-and-fade-4 space-y-4 text-sm">
         <h3 className="font-medium text-[15px]">Writing</h3>
-
-        <div className="grid grid-cols-1 gap-6 ">
-          <a
-            href={"#"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative flex cursor-pointer flex-row items-center justify-between rounded-md duration-300 hover:before:absolute hover:before:-inset-2.5 hover:before:rounded-md hover:before:bg-accent/20 hover:before:content-['']"
-          >
-            <div className="flex flex-col space-y-1 z-10">
-              <span className="text-sm prose prose-zinc dark:prose-invert">
-                How to connect AWS S3 to a Next.js app?
-              </span>
-            </div>
-            <div className="transition duration-150 group-hover:rotate-45">
-              <Icons.link className="size-3.5 whitespace-nowrap text-muted-foreground" />
-            </div>
-          </a>
-          <a
-            href={"#"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative flex cursor-pointer flex-row items-center justify-between rounded-md duration-300 hover:before:absolute hover:before:-inset-2.5 hover:before:rounded-md hover:before:bg-accent/20 hover:before:content-['']"
-          >
-            <div className="flex flex-col space-y-1 z-10">
-              <span className="text-sm prose prose-zinc dark:prose-invert">
-                RAG isnt hard anymore!
-              </span>
-            </div>
-            <div className="transition duration-150 group-hover:rotate-45">
-              <Icons.link className="size-3.5 whitespace-nowrap text-muted-foreground" />
-            </div>
-          </a>
-        </div>
+        <Writings />
       </section>
 
       {/* Projects */}
-      <section className="animate-slide-from-down-and-fade-4 space-y-4 text-sm ">
+      <section className="animate-slide-from-down-and-fade-5 space-y-4 text-sm ">
         <h3 className="font-medium text-[15px] prose prose-zinc dark:prose-invert">
           Projects
         </h3>
 
         <div className="grid grid-cols-1 gap-6 ">
           {projects.map((project, index) => (
-            <Project {...project} key={index} />
+            <Project key={index} {...project} />
           ))}
         </div>
       </section>
 
       {/* Contacts */}
-      <section className="animate-slide-from-down-and-fade-5 space-y-4">
+      <section className="animate-slide-from-down-and-fade-6 space-y-4">
         <div className="prose prose-zinc dark:prose-invert space-y-4 text-[15px]">
           <h3 className="font-medium text-[15px]">Connect</h3>
           <p>

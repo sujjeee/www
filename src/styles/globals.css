@@ -133,3 +133,7 @@ body::-webkit-scrollbar {
 .animate-slide-from-down-and-fade-5 {
   animation: slideFromDownAndFade 0.6s ease-in-out 0.5s both;
 }
+
+.animate-slide-from-down-and-fade-6 {
+  animation: slideFromDownAndFade 0.6s ease-in-out 0.6s both;
+}

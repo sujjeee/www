@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "sujjeee github",
     "sujjeee portfolio",
     "software developer",
+    "Full stack developer",
   ],
   authors: [
     {
