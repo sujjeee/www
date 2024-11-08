@@ -141,9 +141,9 @@ body::-webkit-scrollbar {
 .prose a {
   border-bottom-width: 1px;
   border-style: dashed;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #404040;
   text-decoration-line: none;
-  padding-bottom: 1.5px;
+  padding-bottom: 1.4px;
 }
 
 .prose a:hover {
