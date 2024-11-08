@@ -29,6 +29,18 @@ const components = {
       {...props}
     />
   ),
+  blockquote: ({
+    className,
+    ...props
+  }: React.HTMLAttributes<HTMLQuoteElement>) => (
+    <blockquote
+      className={cn(
+        "mt-6 border-gray-4 border-l-2 pl-6 text-muted italic",
+        className,
+      )}
+      {...props}
+    />
+  ),
 }
 
 export function MDX({ code }: { code: string }) {
