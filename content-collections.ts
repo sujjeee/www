@@ -9,20 +9,23 @@ const posts = defineCollection({
     title: z.string(),
     summary: z.string(),
   }),
-  transform: async (document, context) => {
-    const mdx = await compileMDX(context, document)
+
+  transform: async (document, { collection, cache }) => {
+    const mdx = await compileMDX({ cache }, document)
+    const docs = await collection.documents()
+    const idx = docs.findIndex(
+      (d) => document._meta.filePath === d._meta.filePath,
+    )
+
     return {
       ...document,
       mdx,
+      prev: idx > 0 ? docs[idx - 1] : null,
+      next: idx < docs.length - 1 ? docs[idx + 1] : null,
     }
   },
-  // parser,
-  // exclude,
-  // onSuccess,
-  // typeName,
 })
 
 export default defineConfig({
   collections: [posts],
-  // cache
 })
