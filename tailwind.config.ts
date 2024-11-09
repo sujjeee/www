@@ -24,6 +24,8 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "selection-background": "var(--selection-background)",
+        "selection-foreground": "var(--selection-foreground)",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -51,6 +53,23 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        selection: {
+          background: "var(--selection-background)",
+          foreground: "var(--selection-foreground)",
+        },
+        scrollbar: {
+          thumb: "var(--scrollbar-thumb)",
+          track: "var(--scrollbar-track)",
+        },
+        highlight: {
+          background: "var(--highlight-background)",
+          foreground: "var(--highlight-foreground)",
+        },
+        kbd: {
+          background: "var(--kbd-background)",
+          foreground: "var(--kbd-foreground)",
+          border: "var(--kbd-border)",
         },
       },
       borderRadius: {

@@ -75,13 +75,11 @@
 }
 
 ::-moz-selection {
-  color: var(--selection-foreground);
-  background-color: var(--selection-background);
+  @apply text-selection-foreground bg-selection-background;
 }
 
 ::selection {
-  color: var(--selection-foreground);
-  background-color: var(--selection-background);
+  @apply text-selection-foreground bg-selection-background;
 }
 
 @media (max-width: 640px) {
@@ -149,4 +147,36 @@ body::-webkit-scrollbar {
 .prose a:hover {
   border-style: solid;
   text-decoration: none;
+}
+
+article {
+  h1 + h2 {
+    margin-top: 4px !important;
+  }
+
+  h1 + p,
+  h2 + p {
+    margin-top: 8px !important;
+  }
+
+  figure + h1,
+  p + h1 {
+    margin-top: 48px !important;
+  }
+
+  [data-highlight] {
+    @apply relative;
+  }
+
+  [data-highlight]::before {
+    @apply absolute inset-0 -inset-x-1 -z-10 bg-transparent transition scale-y-[1.1] content-[""] duration-500;
+  }
+
+  [data-highlight="true"]::before {
+    @apply bg-selection-background text-selection-foreground scale-y-110 !important;
+  }
+
+  [data-highlight="false"]::before {
+    @apply bg-transparent scale-y-100;
+  }
 }
