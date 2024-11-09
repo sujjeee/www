@@ -9,7 +9,7 @@ interface BlogPagination {
 export function BlogPagination({ nextPost, prevPost }: BlogPagination) {
   return (
     <div className="flex justify-between mt-8 py-3 md:py-4">
-      <div className="flex items-center justify-between text-[15px]">
+      <div className="flex items-center justify-between text-[14px]">
         {prevPost && (
           <Link
             className="flex flex-col items-start"
