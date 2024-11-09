@@ -4,6 +4,8 @@ import { useMDXComponent } from "@content-collections/mdx/react"
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
+      data-highlight="false"
+      id={props.children?.toString().toLowerCase().replace(/\s+/g, "-")}
       className={cn(
         "font-medium tracking-tighter lg:leading-[1.1]  mb-2 text-[15px]",
         className,
@@ -12,7 +14,9 @@ const components = {
     />
   ),
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h1
+    <h3
+      data-highlight="false"
+      id={props.children?.toString().toLowerCase().replace(/\s+/g, "-")}
       className={cn(
         "mt-8 scroll-m-20 font-medium font-sans tracking-tighter lg:leading-[1.1] group text-[15px]",
         className,
@@ -23,7 +27,7 @@ const components = {
   p: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <p
       className={cn(
-        "prose prose-neutral dark:prose-invert leading-7 [&:not(:first-child)]:mt-6  text-[14px]",
+        "prose prose-neutral dark:prose-invert text-[15px] leading-7 [&:not(:first-child)]:mt-6  ",
         className,
       )}
       {...props}
@@ -47,10 +51,10 @@ export function MDX({ code }: { code: string }) {
   const Component = useMDXComponent(code)
 
   return (
-    <article className="px-7 ">
-      <div>
+    <section className="py-3 md:py-4">
+      <article className="">
         <Component components={components} />
-      </div>
-    </article>
+      </article>
+    </section>
   )
 }
