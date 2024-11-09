@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import React, { useCallback, useEffect, useState } from "react"
 
-export const TableOfContents = () => {
+export function TableOfContents() {
   const [headings, setHeadings] = useState<
     { id: string; text: string; level: string }[]
   >([])
