@@ -1,7 +1,7 @@
 import type React from "react"
-import { Icons } from "./icons"
+import { Icons } from "@/components/icons"
 import { projects } from "@/lib/constants"
-import { ShellSection } from "./ui/shell"
+import { ShellSection } from "@/components/ui/shell"
 
 export interface ProjectProps {
   href: string
@@ -10,7 +10,7 @@ export interface ProjectProps {
   status: "wip" | "maintained" | "archived"
 }
 
-export function Project() {
+export function Projects() {
   return (
     <ShellSection index={4} title="Projects">
       <div className="grid grid-cols-1 gap-6 ">

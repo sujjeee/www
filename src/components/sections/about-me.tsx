@@ -12,7 +12,7 @@ const newsreader = Newsreader({
   subsets: ["latin"],
 })
 
-export function About() {
+export function AboutMe() {
   return (
     <section className="prose prose-zinc dark:prose-invert text-[15px] animate-slide-from-down-and-fade-2 text-pretty">
       <p className="leading-relaxed">

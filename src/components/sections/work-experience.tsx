@@ -1,9 +1,9 @@
 import type React from "react"
 import Link from "next/link"
-import { buttonVariants } from "./ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import { workExperience } from "@/lib/constants"
 import { cn } from "@/lib/utils"
-import { ShellSection } from "./ui/shell"
+import { ShellSection } from "@/components/ui/shell"
 
 export interface WorkProps {
   href: string
@@ -12,14 +12,14 @@ export interface WorkProps {
   buttonText?: string
 }
 
-export function Work() {
+export function WorkExperience() {
   return (
     <ShellSection index={3} title="Work Experience">
       {workExperience.map((work, index) => (
         <div
           key={index}
           className={cn(
-            " w-full justify-between items-center flex  border-input",
+            "w-full justify-between items-center flex border-input",
           )}
         >
           <div className="flex items-center space-x-2">

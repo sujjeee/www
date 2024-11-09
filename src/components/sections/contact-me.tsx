@@ -1,7 +1,7 @@
 import Link from "next/link"
-import { ShellSection } from "./ui/shell"
+import { ShellSection } from "@/components/ui/shell"
 
-export function Contact() {
+export function ContactMe() {
   return (
     <ShellSection index={5} title="Connect">
       <div className="prose prose-zinc dark:prose-invert text-[15px]">

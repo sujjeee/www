@@ -1,5 +1,5 @@
-import { ProjectProps } from "@/components/project"
-import { WorkProps } from "@/components/work"
+import { ProjectProps } from "@/components/sections/projects"
+import { WorkProps } from "@/components/sections/work-experience"
 
 export const projects = [
   {
