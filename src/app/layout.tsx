@@ -1,6 +1,6 @@
+import "@/styles/globals.css"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { siteConfig } from "@/config/site"
-import "@/styles/globals.css"
 import { cn } from "@/lib/utils"
 import { GeistMono } from "geist/font/mono"
 import { GeistSans } from "geist/font/sans"
