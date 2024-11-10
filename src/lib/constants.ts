@@ -67,18 +67,18 @@ export const projects = [
 export const workExperience = [
   {
     title: "Tapify",
-    href: "#",
+    href: "building-saas-from-scratch",
     buttonText: "Building SaaS from Scratch",
   },
   {
     title: "PDFScribe",
-    href: "#",
+    href: "solving-sellers-problem",
     status: "contract work",
     buttonText: "Solving Sellers Problem",
   },
   {
     title: "OnShow",
-    href: "#",
+    href: "learn-new-things-by-doing",
     status: "freelancing",
     buttonText: "Learn New Things by Doing",
   },
