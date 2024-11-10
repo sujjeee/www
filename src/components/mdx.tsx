@@ -51,10 +51,8 @@ export function MDX({ code }: { code: string }) {
   const Component = useMDXComponent(code)
 
   return (
-    <section className="py-3 md:py-4">
-      <article className="">
-        <Component components={components} />
-      </article>
-    </section>
+    <article>
+      <Component components={components} />
+    </article>
   )
 }

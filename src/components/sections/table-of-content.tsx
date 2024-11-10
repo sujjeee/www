@@ -91,7 +91,7 @@ export function TableOfContents() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.25 }}
-        className="top-[10rem] right-auto left-[2rem] hidden xl:top-[6rem] xl:right-[5rem] xl:left-auto xl:block fixed mt-0 h-full w-48 justify-start space-y-4 transition text-[14px]"
+        className="top-[10rem] right-auto left-[2rem] hidden xl:top-[3rem] xl:right-[5rem] xl:left-auto xl:block fixed mt-0 h-full w-48 justify-start space-y-4 transition text-[14px]"
       >
         <div className="mt-0 flex flex-col gap-0">
           {headings.map((heading) => (
@@ -102,11 +102,11 @@ export function TableOfContents() {
                 className={cn({
                   "mt-0 ml-2 border-l border-l-muted py-1 text-left text-muted-foreground  opacity-100 transition ease-in-out hover:opacity-50":
                     true,
-                  "text-bold text-gray-12": visibleHeadings.has(heading.id),
+                  "text-bold": visibleHeadings.has(heading.id),
                   "pl-4": heading.level === "h1",
                   "pl-6": heading.level === "h2",
                   "pl-7": heading.level === "h3",
-                  "border-l border-l-gray-12": visibleHeadings.has(heading.id),
+                  "border-l border-l-primary": visibleHeadings.has(heading.id),
                 })}
                 data-active={visibleHeadings.has(heading.id) ? "true" : "false"}
               >
