@@ -7,7 +7,7 @@ const components = {
       data-highlight="false"
       id={props.children?.toString().toLowerCase().replace(/\s+/g, "-")}
       className={cn(
-        "font-medium tracking-tighter lg:leading-[1.1]  mb-2 text-[15px]",
+        "font-medium  lg:leading-[1.1]  mb-2 text-[15px]",
         className,
       )}
       {...props}
@@ -18,7 +18,7 @@ const components = {
       data-highlight="false"
       id={props.children?.toString().toLowerCase().replace(/\s+/g, "-")}
       className={cn(
-        "mt-8 scroll-m-20 font-medium font-sans tracking-tighter lg:leading-[1.1] group text-[15px]",
+        "mt-9 scroll-m-20 font-medium font-sans lg:leading-[1.1] group text-[15.5px]",
         className,
       )}
       {...props}
