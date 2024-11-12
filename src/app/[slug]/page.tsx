@@ -13,7 +13,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   if (!post) return notFound()
 
   return (
-    <div className="px-4 sm:px-7 py-4">
+    <div className="px-4 sm:px-7 py-4 animation-delay-300 w-full ">
       <div className="w-fit top-[10rem] right-auto left-[2rem] hidden xl:top-[3rem] xl:left-[12rem] xl:right-auto xl:block fixed mt-0 h-full  justify-start space-y-4 transition text-[14px] ">
         <Link
           href={"/"}
@@ -23,7 +23,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <span className="">Back Home</span>
         </Link>
       </div>
-      <div className="animation-delay-100 animate-fade-in">
+      <div>
         <h1 className="font-medium  lg:leading-[1.1] text-lg mb-2">
           {post.title}
         </h1>
