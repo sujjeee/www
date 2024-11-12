@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils"
 import { useMDXComponent } from "@content-collections/mdx/react"
-import Link from "next/link"
 import React from "react"
 
 const components = {
