@@ -8,10 +8,10 @@ interface BlogPagination {
 
 export function BlogPagination({ nextPost, prevPost }: BlogPagination) {
   return (
-    <div className="flex items-center justify-between text-[14px]">
+    <div className="flex w-full items-center justify-between text-[14px]">
       {prevPost && (
         <Link
-          className="flex flex-col items-start"
+          className="flex w-full flex-col gap-1 text-left"
           href={`/${prevPost._meta.path}`}
         >
           <span className="mb-1 text-muted-foreground">Previous</span>
@@ -21,7 +21,7 @@ export function BlogPagination({ nextPost, prevPost }: BlogPagination) {
 
       {nextPost && (
         <Link
-          className="flex flex-col items-end text-right"
+          className="flex w-full flex-col gap-1 text-right"
           href={`/${nextPost._meta.path}`}
         >
           <span className="mb-1 text-muted-foreground">Next</span>
