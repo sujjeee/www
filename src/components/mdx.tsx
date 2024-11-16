@@ -47,6 +47,19 @@ const components = {
       {...props}
     />
   ),
+  a: ({
+    className,
+    ...props
+  }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+    <a
+      target="_blank"
+      className={cn(
+        "prose prose-neutral dark:prose-invert text-[15px]  border-b border-dashed border-neutral-700 no-underline pb-[1.4px] hover:border-solid",
+        className,
+      )}
+      {...props}
+    />
+  ),
   li: ({
     className,
     children,
