@@ -73,7 +73,7 @@ export const workExperience = [
   {
     title: "PDFScribe",
     href: "solving-sellers-problem",
-    status: "contract work",
+    status: "contract",
     buttonText: "Solving Sellers Problem",
   },
   {

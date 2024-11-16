@@ -8,7 +8,7 @@ import { ShellSection } from "@/components/ui/shell"
 export interface WorkProps {
   href: string
   title: string
-  status?: "freelancing" | "contract work"
+  status?: "freelancing" | "contract"
   buttonText?: string
 }
 
