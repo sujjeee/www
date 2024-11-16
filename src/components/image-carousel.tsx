@@ -14,10 +14,8 @@ import { useImageStore } from "@/lib/store/use-image"
 
 export function ImageCarousel() {
   const imageUrls = [
-    "https://utfs.io/f/lWdjoQZNCrBm2DSQ5AbtNGZm5pz4TDOk6fLWxMCQlPYdbRIH",
     "https://utfs.io/f/lWdjoQZNCrBmqWdmDOVuAK1Uo8cdmfQ7LrzR4O3vDwJZjSN5",
     "https://utfs.io/f/lWdjoQZNCrBmjgBZpAhYFm32XDRBaPkSiyrgExoMwdKCp0q4",
-    "https://utfs.io/f/lWdjoQZNCrBmUntwX9413RNfAZTIaVE6dGzX54nxioOp8QF0",
   ]
 
   const { isDesktop } = useWindow()

@@ -26,21 +26,21 @@ export function ContactMe() {
           </Link>
           . You can also follow me on{" "}
           <Link
-            href="https://dub.sh/sujjeee"
-            target="_blank"
-            rel="noreferrer"
-            className="text-[15px] prose prose-zinc dark:prose-invert hover:underline underline-offset-4"
-          >
-            X
-          </Link>{" "}
-          and{" "}
-          <Link
             href="https://git.new/sujjeee"
             target="_blank"
             rel="noreferrer"
             className="text-[15px] prose prose-zinc dark:prose-invert hover:underline underline-offset-4"
           >
             Github
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="https://dub.sh/sujjeee"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[15px] prose prose-zinc dark:prose-invert hover:underline underline-offset-4"
+          >
+            X
           </Link>{" "}
           if you find my work interesting.
         </p>

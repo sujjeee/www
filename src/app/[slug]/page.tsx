@@ -8,7 +8,13 @@ import { notFound } from "next/navigation"
 import { readingTime } from "reading-time-estimator"
 import { ChevronLeft } from "lucide-react"
 
-export default function Page({ params }: { params: { slug: string } }) {
+interface BlogPage {
+  params: {
+    slug: string
+  }
+}
+
+export default function BlogPage({ params }: BlogPage) {
   const post = allPosts.find((post) => post._meta.path === params.slug)
   if (!post) return notFound()
 
