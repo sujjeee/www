@@ -1,6 +1,6 @@
 import { AboutMe } from "@/components/sections/about-me"
 import { ContactMe } from "@/components/sections/contact-me"
-import { ProfileHeader } from "@/components/profile-header"
+import { ProfileHeader } from "@/components/sections/profile-header"
 import { Projects } from "@/components/sections/projects"
 import { WorkExperience } from "@/components/sections/work-experience"
 

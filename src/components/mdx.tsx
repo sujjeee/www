@@ -1,8 +1,12 @@
 import { cn } from "@/lib/utils"
 import { useMDXComponent } from "@content-collections/mdx/react"
 import React from "react"
+import { ImageCarousel } from "@/components/image-carousel"
 
 const components = {
+  ImageCarousel: () => {
+    return <ImageCarousel />
+  },
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       data-highlight="false"

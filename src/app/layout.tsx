@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { GeistMono } from "geist/font/mono"
 import { GeistSans } from "geist/font/sans"
 import type { Metadata, Viewport } from "next"
+import { ImageViewer } from "@/components/image-viewer"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sujjeee.com"),
@@ -80,9 +81,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="mx-auto w-full mb-16 max-w-screen-sm overflow-x-hidden py-8">
+          <main className="mx-auto w-full mb-16 max-w-screen-sm py-8">
             {children}
           </main>
+          <ImageViewer />
         </ThemeProvider>
       </body>
     </html>
