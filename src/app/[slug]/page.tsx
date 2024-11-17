@@ -7,10 +7,28 @@ import { TableOfContents } from "@/components/sections/table-of-content"
 import { notFound } from "next/navigation"
 import { readingTime } from "reading-time-estimator"
 import { ChevronLeft } from "lucide-react"
+import { Metadata } from "next"
 
 interface BlogPage {
   params: {
     slug: string
+  }
+}
+
+export function generateMetadata({ params }: BlogPage): Metadata {
+  const post = allPosts.find((post) => post._meta.path === params.slug)
+
+  if (!post) {
+    return {
+      title: "Post Not Found",
+    }
+  }
+
+  return {
+    title: {
+      absolute: post.title,
+    },
+    description: post.description,
   }
 }
 
