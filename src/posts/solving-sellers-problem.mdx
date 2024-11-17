@@ -4,13 +4,17 @@ description: "Solving Real E-commerce Sellers Problems"
 time: "Oct 6, 2024"
 ---
 
-As developers, it's easy to get focused on making things that are technically cool, but they don't always solve real problems. The most satisfying projects, though, are the ones that tackle real challenges people face every day. This is the story of how I created PDFScribe — a tool that turned a frustrating, time-consuming task into a simple, automated solution for e-commerce sellers.
+As developers, some of the most rewarding projects are those that solve real-world challenges and make life easier for others.
+
+This is the story of how I created **PDFScribe** — _a tool that turned a frustrating, time consuming task into a simple, automated solution for e-commerce sellers._
 
 ### Sellers Problem
 
-If you're an e-commerce seller on platforms like Amazon, Flipkart, or Meesho (major players in the Indian e-commerce space), you're probably all too familiar with the shipping label chaos. Let me paint a picture of what sellers deal with daily:
+If you're an e-commerce seller on platforms like **Amazon, Flipkart, or Meesho** (major players in the Indian e-commerce space), you're probably all too familiar with the shipping label chaos.
 
-Imagine you're a successful seller processing hundreds of orders. At the end of the day, you have a massive PDF file with 500+ shipping labels. Now comes the tedious part:
+Let me paint a picture of what sellers deal with daily:
+
+Imagine you’re a successful seller processing hundreds of orders. By the end of the day, you’re left with a single PDF containing **500+ shipping labels**. Then begins the painstaking task of:
 
 - Manually scanning through hundreds of pages
 - Separating labels by different delivery partners
@@ -22,40 +26,49 @@ This process isn't just time-consuming, it's mind-numbing and error-prone. One m
 
 ### Solution
 
-To help sellers focus on what truly matters — growing their business. I built PDFScribe. It's a specialized tool that automates the entire shipping label management process. Here's what it does:
+To **help sellers** focus on what truly matters - growing their business. I built PDFScribe. It's a specialized tool that automates the entire shipping label management process.
 
-1. **Simple Upload**: Just drag and drop your shipping label PDF
+Here's how PDFScribe works:
+
+1. **Simple Upload**: <br/>
+   Just drag and drop your shipping label PDF
+
 2. **Automatic Processing**:
+
    - Intelligently crops out tax invoices
    - Identifies and groups labels by delivery partner
    - Flags and sorts exchange orders
    - Bundles multi-order shipments
-3. **Zero Infrastructure Cost**: Runs entirely in the browser
 
-Here is visualization of how it works:
+3. **Zero Infrastructure Cost**: <br/>
+   PDFScribe runs in the browser with no need for extra tools or infrastructure.
+
+Visualization of how it works:
 
 ### Tech Stack
 
 PDFScribe is built with a modern tech stack designed to be fast, run in the browser, and, most importantly, be easy for users.
 
-- **Frontend Framework:** [Next.js](https://nextjs.org)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com)
-- **UI Components:** [Shadcn](https://ui.shadcn.com)
-- **Deployment:** [Cloudflare](https://cloudflare.com)
-- **Storage:** [AWS S3](https://aws.amazon.com/s3)
+Frontend Framework: [Next.js](https://nextjs.org)<br/>
+Styling: [Tailwind CSS](https://tailwindcss.com)<br/>
+UI Components: [Shadcn](https://ui.shadcn.com)<br/>
+Deployment: [Cloudflare](https://cloudflare.com)<br/>
+Storage: [AWS S3](https://aws.amazon.com/s3)<br/>
 
 **Key Libraries:**
 
-- **File Upload:** [react-dropzone](https://react-dropzone.js.org)
-- **PDF Parsing:** [LangChain](https://python.langchain.com)
-- **PDF Cropping:** [pdfjs-dist](https://mozilla.github.io/pdf.js)
-- **PDF Grouping:** [pdf-lib](https://pdf-lib.js.org)
-- **Zipping Files:** [JSZip](https://stuk.github.io/jszip)
+File Upload: [react-dropzone](https://react-dropzone.js.org)<br/>
+PDF Parsing: [LangChain](https://python.langchain.com)<br/>
+PDF Cropping: [pdfjs-dist](https://mozilla.github.io/pdf.js)<br/>
+PDF Grouping: [pdf-lib](https://pdf-lib.js.org)<br/>
+Zipping Files: [JSZip](https://stuk.github.io/jszip)<br/>
 
 ### Learnings
 
-> Don't try to solve everyone’s problems—focus on very niche issues and solve them well.
+> Focus on solving a niche problem that a small group cares deeply about, not a broad one no one feels strongly about. - Sam Altman
 
-PDFScribe isn’t built for everyone; it’s specifically designed for Meesho sellers. Building it was more than just coding—it was a valuable learning experience. Initially, it seemed straightforward, but as I dove in, I faced challenges, especially around PDF processing. One major hurdle was the cost-effectiveness of handling large PDFs on the server. Processing these tasks server-side would have made the tool expensive to maintain. After extensive research and experimentation, I found ways to handle everything on the web, without relying on servers or adding extra costs.
+PDFScribe isn’t built for everyone; it’s specifically designed for Meesho sellers.
 
-So, focus on building things that solve specific problems effectively.
+I learned a lot while building this project. At first, I thought it would be easy. But working with PDF files was tricky. The main problem was that processing big PDFs on servers would cost too much money. After lots of research, I found a way to do everything in the web browser instead. This saved money and worked better.
+
+This taught me how important it is to **find good solutions to specific problems**.
