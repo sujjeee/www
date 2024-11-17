@@ -41,12 +41,18 @@ const components = {
   ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
     <ul
       className={cn(
-        "prose prose-neutral dark:prose-invert text-[15px]  mt-2 ml-2 list-disc",
+        "prose prose-neutral dark:prose-invert text-[15px] mt-2 ml-2 list-disc",
         className,
       )}
       {...props}
     />
   ),
+  ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
+    <ol className={cn("mt-2 ml-2 list-decimal", className)} {...props} />
+  ),
+  li: ({ className, ...props }: React.HTMLAttributes<HTMLLIElement>) => {
+    return <li className={cn(" mt-2 ml-2 list-item", className)} {...props} />
+  },
   a: ({
     className,
     ...props
@@ -60,17 +66,6 @@ const components = {
       {...props}
     />
   ),
-  li: ({
-    className,
-    children,
-    ...props
-  }: React.HTMLAttributes<HTMLLIElement>) => {
-    return (
-      <li className={cn("mt-2 ml-2 text-[15px]  list-item", className)}>
-        {children}
-      </li>
-    )
-  },
   blockquote: ({
     className,
     ...props
