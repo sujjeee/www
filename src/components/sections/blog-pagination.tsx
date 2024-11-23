@@ -1,31 +1,40 @@
+"use client"
+
 import Link from "next/link"
 import { type Post } from "content-collections"
+import { usePathname } from "next/navigation"
 
 interface BlogPagination {
-  prevPost: Post["prev"]
-  nextPost: Post["next"]
+  posts: Array<Post>
 }
 
-export function BlogPagination({ nextPost, prevPost }: BlogPagination) {
+export function BlogPagination({ posts }: BlogPagination) {
+  const currentSlug = usePathname().split("/").pop()
+  const currentIndex = posts.findIndex(
+    (post) => post._meta.path === currentSlug,
+  )
+  const next = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null
+  const previous = currentIndex > 0 ? posts[currentIndex - 1] : null
+
   return (
     <div className="flex w-full items-center justify-between text-[14px]">
-      {prevPost && (
+      {previous && (
         <Link
           className="flex w-full flex-col gap-1 text-left"
-          href={`/${prevPost._meta.path}`}
+          href={`/${previous._meta.path}`}
         >
           <span className="mb-1 text-muted-foreground">Previous</span>
-          <span className="font-medium ">{prevPost.title}</span>
+          <span className="font-medium ">{previous.title}</span>
         </Link>
       )}
 
-      {nextPost && (
+      {next && (
         <Link
           className="flex w-full flex-col gap-1 text-right"
-          href={`/${nextPost._meta.path}`}
+          href={`/${next._meta.path}`}
         >
           <span className="mb-1 text-muted-foreground">Next</span>
-          <span className="font-medium ">{nextPost.title}</span>
+          <span className="font-medium ">{next.title}</span>
         </Link>
       )}
     </div>
