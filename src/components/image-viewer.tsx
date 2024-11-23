@@ -29,8 +29,7 @@ export function ImageViewer({ imageUrl }: ImageViewerProps) {
           >
             <Image
               src={imageUrl}
-              unoptimized
-              alt="Tapify ScreenShorts"
+              alt="ScreenShort"
               width={1000}
               height={1000}
               sizes="100vw"
@@ -43,8 +42,12 @@ export function ImageViewer({ imageUrl }: ImageViewerProps) {
 
       <DialogContent className="w-full max-w-screen-lg p-0 sm:rounded-xl overflow-hidden">
         {selectedImage && (
-          <img
+          <Image
+            unoptimized
+            alt="ScreenShort"
             src={selectedImage}
+            width={1000}
+            height={1000}
             className="object-cover h-auto w-full object-center"
             style={{
               WebkitFilter: isImageLoading ? "blur(8px)" : "none",

@@ -9,8 +9,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "utfs.io",
       },
-    ],
-    unoptimized: true,
+    ]
   },
 };
  

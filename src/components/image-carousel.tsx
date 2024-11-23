@@ -32,19 +32,18 @@ export function ImageCarousel({ imageUrls }: ImageCarouselProps) {
         {imageUrls.map((url, index) => (
           <CarouselItem key={index}>
             <div
-              className="rounded-xl border border-muted overflow-hidden cursor-pointer"
+              className=" rounded-xl border border-muted overflow-hidden cursor-pointer"
               onClick={() => handleImageClick(url)}
             >
               <Image
                 src={url}
-                unoptimized
-                alt="Tapify ScreenShorts"
+                alt="screenshorts"
                 width={1000}
                 height={1000}
                 sizes="100vw"
-                className="rounded-xl"
+                className="rounded-xl aspect-[1200/850]"
                 style={{
-                  objectFit: "contain",
+                  objectFit: "cover",
                   width: "100%",
                   height: "auto",
                   objectPosition: "center",

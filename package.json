@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"content-collections watch\" \"build-scripts dev\" \"next dev\"",
-    "build": "content-collections build && build-scripts build && next build",
+    "dev": "concurrently \"content-collections watch\" \"next dev\"",
+    "build": "content-collections build && next build",
+    "content-collections": "content-collections",
     "start": "next start",
     "lint": "biome lint .",
     "lint:write": "biome lint --write --unsafe .",
@@ -15,6 +16,7 @@
     "biome:ci": "biome ci ."
   },
   "dependencies": {
+    "@content-collections/cli": "^0.1.6",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.3",
