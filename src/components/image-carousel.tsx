@@ -12,7 +12,7 @@ import Image from "next/image"
 import { useWindow } from "@/hooks/use-window"
 import { useImageStore } from "@/lib/store/use-image"
 
-interface ImageCarouselProps {
+export interface ImageCarouselProps {
   imageUrls: string[]
 }
 

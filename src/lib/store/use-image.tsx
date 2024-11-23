@@ -2,14 +2,20 @@ import { create } from "zustand"
 
 interface ImageState {
   selectedImage: string | null
+  setSelectedImage: (imageUrl: string | null) => void
+  selectedVideo: string | null
+  setSelectedVideo: (videoSrc: string | null) => void
   isDialogOpen: boolean
-  setSelectedImage: (image: string | null) => void
   setDialogOpen: (isOpen: boolean) => void
 }
 
 export const useImageStore = create<ImageState>()((set) => ({
   selectedImage: null,
+  setSelectedImage: (imageUrl: string | null) =>
+    set({ selectedImage: imageUrl }),
+  selectedVideo: null,
+  setSelectedVideo: (videoSrc: string | null) =>
+    set({ selectedVideo: videoSrc }),
   isDialogOpen: false,
-  setSelectedImage: (image: string | null) => set({ selectedImage: image }),
   setDialogOpen: (isOpen: boolean) => set({ isDialogOpen: isOpen }),
 }))
