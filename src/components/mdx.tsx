@@ -4,8 +4,8 @@ import React from "react"
 import { ImageCarousel } from "@/components/image-carousel"
 
 const components = {
-  ImageCarousel: () => {
-    return <ImageCarousel />
+  ImageCarousel: ({ imageUrls }: { imageUrls: string[] }) => {
+    return <ImageCarousel imageUrls={imageUrls} />
   },
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1

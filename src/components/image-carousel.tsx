@@ -12,12 +12,11 @@ import Image from "next/image"
 import { useWindow } from "@/hooks/use-window"
 import { useImageStore } from "@/lib/store/use-image"
 
-export function ImageCarousel() {
-  const imageUrls = [
-    "https://utfs.io/f/lWdjoQZNCrBmqWdmDOVuAK1Uo8cdmfQ7LrzR4O3vDwJZjSN5",
-    "https://utfs.io/f/lWdjoQZNCrBmjgBZpAhYFm32XDRBaPkSiyrgExoMwdKCp0q4",
-  ]
+interface ImageCarouselProps {
+  imageUrls: string[]
+}
 
+export function ImageCarousel({ imageUrls }: ImageCarouselProps) {
   const { isDesktop } = useWindow()
   const [isImageLoading, setImageLoading] = React.useState(true)
   const { setSelectedImage, setDialogOpen } = useImageStore()

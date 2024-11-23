@@ -61,8 +61,12 @@ export default function BlogPage({ params }: BlogPage) {
       </div>
       <MDX code={post.mdx} />
       <div className="my-10 h-[0.5px] w-full shrink-0 border border-dashed" />
-      <BlogPagination prevPost={post.prev} nextPost={post.next} />
+      <BlogPagination posts={allPosts} />
       <TableOfContents />
     </div>
   )
 }
+
+const sortedPosts = allPosts.sort((a, b) => {
+  return new Date(b.time).getTime() - new Date(a.time).getTime()
+})
