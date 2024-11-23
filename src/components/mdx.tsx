@@ -3,13 +3,17 @@ import { useMDXComponent } from "@content-collections/mdx/react"
 import React from "react"
 import { ImageCarousel, ImageCarouselProps } from "@/components/image-carousel"
 import { ImageViewer, ImageViewerProps } from "./image-viewer"
+import { VideoViewer, VideoViewerProps } from "./video-viewer"
 
 const components = {
   ImageCarousel: ({ imageUrls }: ImageCarouselProps) => {
     return <ImageCarousel imageUrls={imageUrls} />
   },
-  ImageViewer: ({ imageUrl, videoSrc }: ImageViewerProps) => {
-    return <ImageViewer imageUrl={imageUrl} videoSrc={videoSrc} />
+  ImageViewer: ({ imageUrl }: ImageViewerProps) => {
+    return <ImageViewer imageUrl={imageUrl} />
+  },
+  VideoViewer: ({ videoSrc }: VideoViewerProps) => {
+    return <VideoViewer videoSrc={videoSrc} />
   },
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
