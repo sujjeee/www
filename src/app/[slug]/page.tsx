@@ -20,15 +20,15 @@ export function generateMetadata({ params }: BlogPage): Metadata {
 
   if (!post) {
     return {
-      title: "Post Not Found"
+      title: "Post Not Found",
     }
   }
 
   return {
     title: {
-      absolute: post.title
+      absolute: post.title,
     },
-    description: post.description
+    description: post.description,
   }
 }
 
@@ -51,7 +51,7 @@ export default function BlogPage({ params }: BlogPage) {
       <div className="mb-8">
         <Link
           href={"/"}
-          className=" mb-4 sm:hidden text-muted-foreground hover:text-primary items-center flex gap-2 cursor-pointer text-bold group"
+          className=" mb-4 xl:hidden text-muted-foreground hover:text-primary items-center flex gap-2 cursor-pointer text-bold group"
         >
           <MoveLeft className="size-4 ml-1 transition group-hover:-translate-x-1" />{" "}
           <span className="text-xs">Back Home</span>
