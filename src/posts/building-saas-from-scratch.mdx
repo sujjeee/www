@@ -1,7 +1,7 @@
 ---
 title: "Building SaaS from Scratch"
 description: "Blog post explaining how a solo developer built an entire SaaS application from scratch, which is now live in production and used by thousands of monthly active users."
-time: "Oct 10, 2024"
+time: "November 10, 2024"
 ---
 
 _Startups sound exciting, right?_&nbsp; Coming up with a new idea or finding a unique problem to solve is a challenge - especially today, when nearly every concept seems to already exist somewhere in the world. And if you're building a startup in this competitive market, hats off to you!
@@ -30,22 +30,21 @@ Here's a glimpse of my work:
 
 <ImageCarousel
   imageUrls={[
-    "https://utfs.io/f/lWdjoQZNCrBm9SexB7rufdQSBUv78bjlJwcms0CXqFrg1k6h",
-    "https://utfs.io/f/lWdjoQZNCrBm3ZZ9cVM1Mm6nXvJSx4i9dHW0Ecz8KoGkjh5N",
-    "https://utfs.io/f/lWdjoQZNCrBmMs0dTLn2NT3LtlxIG1pJ8bZ4FjdiRSY5rg7W",
-    "https://utfs.io/f/lWdjoQZNCrBmrtKkh6iYagMG0N63FuEVl5hpXZBIPTHxWjzq",
     "https://utfs.io/f/lWdjoQZNCrBmhMGU6OBntbEJwr1Q0mMHuYpfNogiLOeRaD3k",
-    "https://utfs.io/f/lWdjoQZNCrBm9od79yrufdQSBUv78bjlJwcms0CXqFrg1k6h",
+    "https://utfs.io/f/lWdjoQZNCrBm1ZZtdC9EfdO3kg2TYxvFiwhzP0XHABC5beyr",
+    "https://utfs.io/f/lWdjoQZNCrBm9SexB7rufdQSBUv78bjlJwcms0CXqFrg1k6h",
     "https://utfs.io/f/lWdjoQZNCrBmO0SQ1ri6mBlLRiJbIKYn381vPNVU4WFXh0Ex",
     "https://utfs.io/f/lWdjoQZNCrBmXcMTI3FrWSQkZJFMm6ac9RnYzwep8ALiH1KV",
-    "https://utfs.io/f/lWdjoQZNCrBm1ZZtdC9EfdO3kg2TYxvFiwhzP0XHABC5beyr",
     "https://utfs.io/f/lWdjoQZNCrBmJhd3rNxUEimdFvsAYx90ZKD5ktoRqa2lgcVz",
+    "https://utfs.io/f/lWdjoQZNCrBmMs0dTLn2NT3LtlxIG1pJ8bZ4FjdiRSY5rg7W",
+    "https://utfs.io/f/lWdjoQZNCrBm9od79yrufdQSBUv78bjlJwcms0CXqFrg1k6h",
+    "https://utfs.io/f/lWdjoQZNCrBmfXbxsjqDjm6LwFbRglMhD7ozn1vGxta0UYpX",
   ]}
 />
 
 ### Teck Stack
 
-Building Tapify from the ground up as the sole developer on the team, while working closely with the founder, was an incredibly exciting experience. Every single line of code was written by me, enabling me to quickly identify and resolve any bugs or issues that occurred.
+Building **Tapify from the ground up** as the sole developer on the team, while **working closely with the founder**, was an **incredibly exciting experience**. **Every single line of code was written by me**, enabling me to quickly identify and resolve any bugs or issues that occurred.
 
 I used a **cutting-edge tech stack** and followed industry best practices to keep the code **type-safe** and **maintainable for future updates** and changes.
 
@@ -63,6 +62,30 @@ Storage: [Supabase Storage](https://supabase.com/docs/guides/storage/?ref=sujjee
 Validations: [Zod](https://zod.dev/?ref=sujjeee.com) and [React Hook Form](https://react-hook-form.com/?ref=sujjeee.com)<br/>
 State Management: [Zustand](https://zustand-demo.pmnd.rs/?ref=sujjeee.com)<br/>
 Rate Limiting: [Upstash](https://upstash.com/?ref=sujjeee.com)<br/>
+
+The **mentioned tech stack** and **best practices** I implemented played a key role in achieving **outstanding performance**. Take a look at these **speed insights** that highlight the platform's **efficiency** :
+
+<ImageCarousel
+  imageUrls={[
+    "https://utfs.io/f/lWdjoQZNCrBm2JyAYLybtNGZm5pz4TDOk6fLWxMCQlPYdbRI",
+    "https://utfs.io/f/lWdjoQZNCrBm0b38D8dz9836MXZwmuQYGhKeVBcqsyNjLv7E",
+    "https://utfs.io/f/lWdjoQZNCrBmjoo4QYhYFm32XDRBaPkSiyrgExoMwdKCp0q4",
+    "https://utfs.io/f/lWdjoQZNCrBmjyryt8hYFm32XDRBaPkSiyrgExoMwdKCp0q4",
+    "https://utfs.io/f/lWdjoQZNCrBmRfgjFVSefGnKhqY36Ew9dgpHVMJAilIPjO8s",
+  ]}
+/>
+
+### Launch Day Story
+
+Launch day was both **exciting** and **challenging**! We faced an issue with data migration because of changes in the schema. It took a bit of time to fix, but once it was done, we quickly switched the domain and the web app started getting real user interactions.
+
+Everything went smoothly - **no issues were reported by Tapify’s customers**.
+
+The only minor issue was with certain customers email providers, which caused problems with magic link logins. I resolved it within a day by adding a verification route, similar to Vercel’s approach.
+
+Here’s the midnight **message I got from the founder** on launch day:
+
+<ImageShell imageUrl="https://utfs.io/f/lWdjoQZNCrBma81B7k5Reo25kPv18BFUbWhNlCZjDyGXr7Of" />
 
 ### Learnings
 
