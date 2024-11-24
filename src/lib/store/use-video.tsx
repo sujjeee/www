@@ -12,5 +12,5 @@ export const useVideoStore = create<VideoState>()((set) => ({
   setSelectedVideo: (videoSrc: string | null) =>
     set({ selectedVideo: videoSrc }),
   isDialogOpen: false,
-  setDialogOpen: (isOpen: boolean) => set({ isDialogOpen: isOpen }),
+  setDialogOpen: (isOpen: boolean) => set({ isDialogOpen: isOpen })
 }))

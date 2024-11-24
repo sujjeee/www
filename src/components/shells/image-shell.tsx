@@ -31,7 +31,7 @@ export function ImageShell({ imageUrl }: ImageShellProps) {
         className="rounded-xl"
         style={{
           WebkitFilter: isImageLoading ? "blur(8px)" : "none",
-          transition: "all 0.5s ease",
+          transition: "all 0.5s ease"
         }}
         onLoad={() => setImageLoading(false)}
       />

@@ -1,14 +1,14 @@
 "use client"
 
-import React from "react"
 import {
   Dialog,
   DialogContent,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger
 } from "@/components/ui/dialog"
 import { useVideoStore } from "@/lib/store/use-video"
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden"
+import React from "react"
 
 export interface VideoViewerProps {
   videoSrc?: string

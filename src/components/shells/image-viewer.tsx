@@ -1,10 +1,10 @@
 "use client"
 
-import React from "react"
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 import { useImageStore } from "@/lib/store/use-image"
-import Image from "next/image"
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden"
+import Image from "next/image"
+import React from "react"
 
 export function ImageViewer() {
   const [isImageLoading, setImageLoading] = React.useState(true)
@@ -26,7 +26,7 @@ export function ImageViewer() {
             className="object-cover h-auto w-full object-center"
             style={{
               WebkitFilter: isImageLoading ? "blur(8px)" : "none",
-              transition: "all 0.5s ease",
+              transition: "all 0.5s ease"
             }}
             onLoad={() => setImageLoading(false)}
           />

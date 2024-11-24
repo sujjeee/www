@@ -15,6 +15,12 @@
     }
   },
   "files": {
-    "ignore": ["node_modules", ".vscode", ".next", "dist"]
+    "ignore": [
+      "node_modules",
+      ".vscode",
+      ".next",
+      "dist",
+      ".content-collections"
+    ]
   }
 }

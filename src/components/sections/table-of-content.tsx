@@ -18,7 +18,7 @@ export function TableOfContents() {
         id: heading.id,
         text: heading.textContent || "",
         level: heading.tagName.toLowerCase(),
-        top: (heading as HTMLElement).offsetTop,
+        top: (heading as HTMLElement).offsetTop
       }))
   }, [])
 
@@ -28,7 +28,7 @@ export function TableOfContents() {
 
     const observerOptions = {
       root: null,
-      threshold: 0,
+      threshold: 0
     }
 
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -49,7 +49,7 @@ export function TableOfContents() {
 
     const observer = new IntersectionObserver(
       handleIntersection,
-      observerOptions,
+      observerOptions
     )
 
     for (const heading of collectedHeadings) {
@@ -73,7 +73,7 @@ export function TableOfContents() {
       const top = element.offsetTop - 100
       window.scrollTo({
         top: top,
-        behavior: "smooth",
+        behavior: "smooth"
       })
 
       element.setAttribute("data-highlight", "true")
@@ -100,13 +100,12 @@ export function TableOfContents() {
                 type="button"
                 onClick={() => scroll(heading.id)}
                 className={cn({
-                  "mt-0 ml-2 border-l border-l-muted py-1 text-left text-muted-foreground  opacity-100 transition ease-in-out hover:opacity-50":
-                    true,
+                  "mt-0 ml-2 border-l border-l-muted py-1 text-left text-muted-foreground  opacity-100 transition ease-in-out hover:opacity-50": true,
                   "text-bold": visibleHeadings.has(heading.id),
                   "pl-4": heading.level === "h1",
                   "pl-6": heading.level === "h2",
                   "pl-7": heading.level === "h3",
-                  "border-l border-l-primary": visibleHeadings.has(heading.id),
+                  "border-l border-l-primary": visibleHeadings.has(heading.id)
                 })}
                 data-active={visibleHeadings.has(heading.id) ? "true" : "false"}
               >

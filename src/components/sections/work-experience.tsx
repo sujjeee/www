@@ -1,9 +1,9 @@
-import type React from "react"
-import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
+import { ShellSection } from "@/components/ui/shell"
 import { workExperience } from "@/lib/constants"
 import { cn } from "@/lib/utils"
-import { ShellSection } from "@/components/ui/shell"
+import Link from "next/link"
+import type React from "react"
 
 export interface WorkProps {
   href: string
@@ -19,7 +19,7 @@ export function WorkExperience() {
         <div
           key={index}
           className={cn(
-            "w-full justify-between items-center flex border-input",
+            "w-full justify-between items-center flex border-input"
           )}
         >
           <div className="flex items-center space-x-2">
@@ -35,7 +35,7 @@ export function WorkExperience() {
             className={buttonVariants({
               variant: "outline",
               size: "xs",
-              className: " text-xs text-muted-foreground",
+              className: " text-xs text-muted-foreground"
             })}
           >
             {work.buttonText ? work.buttonText : "View Details "}

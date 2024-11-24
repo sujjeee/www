@@ -11,7 +11,7 @@ export function ShellSection({
     <section
       className={cn(
         `animate-slide-from-down-and-fade-${index} space-y-4 text-sm`,
-        className,
+        className
       )}
       {...props}
     >

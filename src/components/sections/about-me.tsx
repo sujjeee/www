@@ -2,14 +2,14 @@ import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
+  TooltipTrigger
 } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
 import { Newsreader } from "next/font/google"
 
 const newsreader = Newsreader({
   style: "italic",
-  subsets: ["latin"],
+  subsets: ["latin"]
 })
 
 export function AboutMe() {
@@ -20,7 +20,7 @@ export function AboutMe() {
         <span
           className={cn(
             "font-medium font-reader text-[16px] text-foreground",
-            newsreader.className,
+            newsreader.className
           )}
         >
           Full-Stack Engineer

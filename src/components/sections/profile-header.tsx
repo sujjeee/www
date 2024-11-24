@@ -7,7 +7,7 @@ interface ProfileHeaderProps {
 export function ProfileHeader({
   name,
   username,
-  isActive,
+  isActive
 }: ProfileHeaderProps) {
   return (
     <header className="top-0 z-50 w-full animate-slide-from-down-and-fade-1 cursor-context-menu">

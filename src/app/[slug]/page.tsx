@@ -1,13 +1,13 @@
-import React from "react"
-import Link from "next/link"
 import { MDX } from "@/components/mdx"
-import { allPosts } from "content-collections"
 import { BlogPagination } from "@/components/sections/blog-pagination"
 import { TableOfContents } from "@/components/sections/table-of-content"
-import { notFound } from "next/navigation"
-import { readingTime } from "reading-time-estimator"
+import { allPosts } from "content-collections"
 import { ChevronLeft, MoveLeft } from "lucide-react"
 import { Metadata } from "next"
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import React from "react"
+import { readingTime } from "reading-time-estimator"
 
 interface BlogPage {
   params: {
@@ -20,15 +20,15 @@ export function generateMetadata({ params }: BlogPage): Metadata {
 
   if (!post) {
     return {
-      title: "Post Not Found",
+      title: "Post Not Found"
     }
   }
 
   return {
     title: {
-      absolute: post.title,
+      absolute: post.title
     },
-    description: post.description,
+    description: post.description
   }
 }
 

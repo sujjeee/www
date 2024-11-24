@@ -1,16 +1,16 @@
 "use client"
 
-import * as React from "react"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
+  CarouselPrevious
 } from "@/components/ui/carousel"
-import Image from "next/image"
 import { useWindow } from "@/hooks/use-window"
 import { useImageStore } from "@/lib/store/use-image"
+import Image from "next/image"
+import * as React from "react"
 
 export interface ImageCarouselProps {
   imageUrls: string[]
@@ -48,7 +48,7 @@ export function ImageCarousel({ imageUrls }: ImageCarouselProps) {
                   height: "auto",
                   objectPosition: "center",
                   WebkitFilter: isImageLoading ? "blur(8px)" : "none",
-                  transition: "all 0.5s ease",
+                  transition: "all 0.5s ease"
                 }}
                 onLoad={() => setImageLoading(false)}
               />

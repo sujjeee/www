@@ -1,7 +1,7 @@
-import type React from "react"
 import { Icons } from "@/components/icons"
-import { projects } from "@/lib/constants"
 import { ShellSection } from "@/components/ui/shell"
+import { projects } from "@/lib/constants"
+import type React from "react"
 
 export interface ProjectProps {
   href: string

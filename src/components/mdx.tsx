@@ -1,12 +1,12 @@
+import {
+  ImageCarousel,
+  ImageCarouselProps
+} from "@/components/shells/image-carousel"
 import { cn } from "@/lib/utils"
 import { useMDXComponent } from "@content-collections/mdx/react"
 import React from "react"
-import {
-  ImageCarousel,
-  ImageCarouselProps,
-} from "@/components/shells/image-carousel"
-import { VideoViewer, VideoViewerProps } from "./shells/video-viewer"
 import { ImageShell, ImageShellProps } from "./shells/image-shell"
+import { VideoViewer, VideoViewerProps } from "./shells/video-viewer"
 
 const components = {
   ImageCarousel: ({ imageUrls }: ImageCarouselProps) => {
@@ -24,7 +24,7 @@ const components = {
       id={props.children?.toString().toLowerCase().replace(/\s+/g, "-")}
       className={cn(
         "font-medium  lg:leading-[1.1]  mb-2 text-[15px]",
-        className,
+        className
       )}
       {...props}
     />
@@ -35,7 +35,7 @@ const components = {
       id={props.children?.toString().toLowerCase().replace(/\s+/g, "-")}
       className={cn(
         "mt-9 scroll-m-20 font-medium font-sans lg:leading-[1.1] group text-[15.5px]",
-        className,
+        className
       )}
       {...props}
     />
@@ -44,7 +44,7 @@ const components = {
     <p
       className={cn(
         "prose prose-neutral dark:prose-invert text-[15px] leading-7 [&:not(:first-child)]:mt-6  ",
-        className,
+        className
       )}
       {...props}
     />
@@ -53,7 +53,7 @@ const components = {
     <ul
       className={cn(
         "prose prose-neutral dark:prose-invert text-[15px] mt-2 ml-2 list-disc",
-        className,
+        className
       )}
       {...props}
     />
@@ -72,7 +72,7 @@ const components = {
       target="_blank"
       className={cn(
         "prose prose-neutral dark:prose-invert text-[15px]  border-b border-dashed border-neutral-700 no-underline pb-[1.4px] hover:border-solid",
-        className,
+        className
       )}
       {...props}
     />
@@ -84,11 +84,11 @@ const components = {
     <blockquote
       className={cn(
         "mt-6 border-gray-4 border-l-2 pl-6 text-muted italic",
-        className,
+        className
       )}
       {...props}
     />
-  ),
+  )
 }
 
 export function MDX({ code }: { code: string }) {

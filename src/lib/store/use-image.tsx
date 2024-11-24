@@ -12,5 +12,5 @@ export const useImageStore = create<ImageState>()((set) => ({
   setSelectedImage: (imageUrl: string | null) =>
     set({ selectedImage: imageUrl }),
   isDialogOpen: false,
-  setDialogOpen: (isOpen: boolean) => set({ isDialogOpen: isOpen }),
+  setDialogOpen: (isOpen: boolean) => set({ isDialogOpen: isOpen })
 }))
