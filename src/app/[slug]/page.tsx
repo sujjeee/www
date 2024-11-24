@@ -53,7 +53,7 @@ export default function BlogPage({ params }: BlogPage) {
         </h1>
         <div className="mb-8 flex flex-wrap items-center space-x-1.5 text-muted-foreground text-sm">
           <time dateTime="2024-10-06T00:00:00.000Z" className="block">
-            Updated {""} {post.time}
+            {post.time}
           </time>
           <div className="text-[0.6rem]">•</div>
           <div>{readingTime(post.content).minutes} minutes read</div>
