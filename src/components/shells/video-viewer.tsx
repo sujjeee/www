@@ -1,8 +1,14 @@
 "use client"
 
 import React from "react"
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import { useVideoStore } from "@/lib/store/use-video"
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden"
 
 export interface VideoViewerProps {
   videoSrc?: string
@@ -42,6 +48,9 @@ export function VideoViewer({ videoSrc }: VideoViewerProps) {
           </div>
         </DialogTrigger>
       )}
+      <DialogTitle asChild>
+        <VisuallyHidden.Root>Video Preview</VisuallyHidden.Root>
+      </DialogTitle>
       <DialogContent className="w-full max-w-screen-lg p-0 sm:rounded-xl overflow-hidden">
         {selectedVideo && (
           <video
