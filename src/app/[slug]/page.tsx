@@ -6,7 +6,7 @@ import { BlogPagination } from "@/components/sections/blog-pagination"
 import { TableOfContents } from "@/components/sections/table-of-content"
 import { notFound } from "next/navigation"
 import { readingTime } from "reading-time-estimator"
-import { ChevronLeft } from "lucide-react"
+import { ChevronLeft, MoveLeft } from "lucide-react"
 import { Metadata } from "next"
 
 interface BlogPage {
@@ -44,14 +44,22 @@ export default function BlogPage({ params }: BlogPage) {
           className="text-muted-foreground hover:text-primary items-center flex gap-2 cursor-pointer text-bold group"
         >
           <ChevronLeft className="size-4 ml-1 transition group-hover:-translate-x-1" />{" "}
-          <span className="">Back Home</span>
+          <span>Back Home</span>
         </Link>
       </div>
-      <div>
+
+      <div className="mb-8">
+        <Link
+          href={"/"}
+          className=" mb-4 sm:hidden text-muted-foreground hover:text-primary items-center flex gap-2 cursor-pointer text-bold group"
+        >
+          <MoveLeft className="size-4 ml-1 transition group-hover:-translate-x-1" />{" "}
+          <span className="text-xs">Back Home</span>
+        </Link>
         <h1 className="font-medium  lg:leading-[1.1] text-lg mb-2">
           {post.title}
         </h1>
-        <div className="mb-8 flex flex-wrap items-center space-x-1.5 text-muted-foreground text-sm">
+        <div className=" flex flex-wrap items-center space-x-1.5 text-muted-foreground text-sm">
           <time dateTime="2024-10-06T00:00:00.000Z" className="block">
             {post.time}
           </time>
@@ -59,6 +67,7 @@ export default function BlogPage({ params }: BlogPage) {
           <div>{readingTime(post.content).minutes} minutes read</div>
         </div>
       </div>
+
       <MDX code={post.mdx} />
       <div className="my-10 h-[0.5px] w-full shrink-0 border border-dashed" />
       <BlogPagination posts={allPosts} />
