@@ -1,9 +1,12 @@
 import { cn } from "@/lib/utils"
 import { useMDXComponent } from "@content-collections/mdx/react"
 import React from "react"
-import { ImageCarousel, ImageCarouselProps } from "@/components/image-carousel"
-import { VideoViewer, VideoViewerProps } from "./video-viewer"
-import { ImageShell, ImageShellProps } from "./image-shell"
+import {
+  ImageCarousel,
+  ImageCarouselProps,
+} from "@/components/shells/image-carousel"
+import { VideoViewer, VideoViewerProps } from "./shells/video-viewer"
+import { ImageShell, ImageShellProps } from "./shells/image-shell"
 
 const components = {
   ImageCarousel: ({ imageUrls }: ImageCarouselProps) => {
