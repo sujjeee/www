@@ -15,9 +15,14 @@ export function ContactMe() {
             Discord
           </CustomLink>
           . You can also follow me on{" "}
-          <CustomLink href="https://git.new/sujjeee">Github</CustomLink> and{" "}
-          <CustomLink href="https://dub.sh/sujjeee">X</CustomLink> if you find
-          my work interesting.
+          <CustomLink href="https://git.new/sujjeee/?ref=sujjeee.com">
+            Github
+          </CustomLink>{" "}
+          and{" "}
+          <CustomLink href="https://dub.sh/sujjeee/?ref=sujjeee.com">
+            X
+          </CustomLink>{" "}
+          if you find my work interesting.
         </p>
       </div>
     </ShellSection>
