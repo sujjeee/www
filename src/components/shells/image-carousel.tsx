@@ -99,14 +99,6 @@ export function ImageCarousel({ imageUrls }: ImageCarouselProps) {
       {isMobile && (
         <div className="w-full  flex justify-center items-center gap-1 mt-1">
           {imageUrls.map((_, index) => (
-            // <button
-            //   key={index}
-            //   onClick={() => handleDotClick(index)}
-            //   className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-            //     current === index ? "bg-white" : "bg-white/50"
-            //   } hover:bg-white/90`}
-            //   aria-label={`Go to slide ${index + 1}`}
-            // />
             <button
               key={index}
               className={cn(
