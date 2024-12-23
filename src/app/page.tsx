@@ -7,7 +7,7 @@ import { WorkExperience } from "@/components/sections/work-experience"
 export default function Home() {
   return (
     <section className="items-center gap-8 container py-3 md:py-4 space-y-12">
-      <ProfileHeader name="Suraj Gupta" username="sujjeee" isActive />
+      <ProfileHeader name="Suraj Gupta" username="sujjeee" isActive={false} />
       <AboutMe />
       <WorkExperience />
       <Projects />
