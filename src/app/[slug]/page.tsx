@@ -20,15 +20,15 @@ export function generateMetadata({ params }: BlogPage): Metadata {
 
   if (!post) {
     return {
-      title: "Post Not Found",
+      title: "Post Not Found"
     }
   }
 
   return {
     title: {
-      absolute: post.title,
+      absolute: post.title
     },
-    description: post.description,
+    description: post.description
   }
 }
 

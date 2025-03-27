@@ -6,14 +6,14 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
+  CarouselPrevious
 } from "@/components/ui/carousel"
 import { useWindow } from "@/hooks/use-window"
 import { useImageStore } from "@/lib/store/use-image"
+import { cn } from "@/lib/utils"
+import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import * as React from "react"
-import Autoplay from "embla-carousel-autoplay"
-import { cn } from "@/lib/utils"
 
 export interface ImageCarouselProps {
   imageUrls: string[]
@@ -51,8 +51,8 @@ export function ImageCarousel({ imageUrls }: ImageCarouselProps) {
       setApi={setApi}
       plugins={[
         Autoplay({
-          delay: 2000,
-        }),
+          delay: 2000
+        })
       ]}
     >
       <CarouselContent>
@@ -75,7 +75,7 @@ export function ImageCarousel({ imageUrls }: ImageCarouselProps) {
                   height: "auto",
                   objectPosition: "center",
                   WebkitFilter: isImageLoading ? "blur(8px)" : "none",
-                  transition: "all 0.5s ease",
+                  transition: "all 0.5s ease"
                 }}
                 onLoad={() => setImageLoading(false)}
               />
@@ -103,7 +103,7 @@ export function ImageCarousel({ imageUrls }: ImageCarouselProps) {
               key={index}
               className={cn(
                 "size-2 rounded-full transition-colors duration-300 hover:bg-white/90",
-                current === index ? "bg-white" : "bg-white/50",
+                current === index ? "bg-white" : "bg-white/50"
               )}
               onClick={() => handleDotClick(index)}
             />

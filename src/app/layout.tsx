@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sujjeee.com"),
   title: {
     default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    template: `%s - ${siteConfig.name}`
   },
   description: siteConfig.description,
   keywords: [
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     "sujjeee github",
     "sujjeee portfolio",
     "software developer",
-    "Full stack developer",
+    "Full stack developer"
   ],
   authors: [
     {
       name: "Suraj Gupta",
-      url: "https://sujjeee.com",
-    },
+      url: "https://sujjeee.com"
+    }
   ],
   creator: "sujjeee",
   openGraph: {
@@ -39,30 +39,30 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
-    siteName: siteConfig.name,
+    siteName: siteConfig.name
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@sujjeeee",
+    creator: "@sujjeeee"
   },
   icons: {
-    icon: "/favicon.ico",
-  },
+    icon: "/favicon.ico"
+  }
 }
 
 export const viewport: Viewport = {
   colorScheme: "dark light",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+    { media: "(prefers-color-scheme: dark)", color: "black" }
+  ]
 }
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
@@ -72,7 +72,7 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           GeistSans.variable,
-          GeistMono.variable,
+          GeistMono.variable
         )}
       >
         <ThemeProvider
